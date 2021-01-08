@@ -4,7 +4,7 @@ import "./Sidebar.css";
 
 function Sidebar() {
   const recentItem = (topic) => (
-    <div className="sidebar__recentItems">
+    <div className="sidebar__recentItem">
       <span className="sidebar__hash">#</span>
       <p>{topic}</p>
     </div>
@@ -21,6 +21,7 @@ function Sidebar() {
         <h2>Paul Gonzalez</h2>
         <h4>RGonz108@gmail.com</h4>
       </div>
+
       <div className="sidebar__stats">
         <div className="sidebar__stat">
           <p>Who Viewed You</p>
@@ -31,6 +32,7 @@ function Sidebar() {
           <p className="sidebar__statNumber">2,488</p>
         </div>
       </div>
+
       <div className="sidebar__bottom">
         <p>Recent</p>
         {recentItem("Reactjs")}
